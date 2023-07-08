@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>cv</title>
 </head>
+
 <body>
-    <header>
-        <div class="avatar">
-            <img src="assets/photo_2023-07-07_14-42-36.jpg" alt="photo">
-        </div>
-        <div class="info-about-me">
-            <h1 class="name">Daryna</h1>
-            <h1 class="surname">Tymoshenko</h1>
-            <h2 class="prof">Frontend developer</h2>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <div class="avatar">
+                <img src="assets/photo_2023-07-07_14-42-36.jpg" alt="photo">
+            </div>
+            <div class="info-about-me">
+                <h1 class="name">Daryna</h1>
+                <h2 class="surname">Tymoshenko</h2>
+                <h3 class="prof">Frontend developer</h3>
+            </div>
+        </header>
+        <main>
+            <div class="left">
+                <div>
+                    <h2 class="title">Contacts</h2>
+                    <ul class="contacts">
+                        <li>
+                            <img class="loc-img" src="./assets/location.svg" alt="loc">
+                            Kyiv, Ukraine
+                        </li>
+                        <li>
+                            <img class="phone-img" src="./assets/phone.svg" alt="phone">
+                            Phone: +380685757182
+                        </li>
+                        <li>
+                            <img class="email-img" src="./assets/email.svg" alt="email">
+                            Email: darynatymoshenko@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="title">Skills</h2>
+                    <ul class="skills">
+                        <li class="language">HTML</li>
+                        <li class="language">CSS</li>
+                        <li class="language">Javascript</li>
+                        <li class="language">Git</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <h2 class="title">About me</h2>
+                    <span class="summary">Motivated and detail-oriented junior frontend developer.
+                        Eager to apply my skills and knowledge in a professional setting while continuously learning and
+                        growing in the field of frontend development.
+                    </span>
+                </div>
+                <div>
+                    <h2 class="title">Code Example</h2>
+                    <pre>
+function sum(a, b) {
+
+    return a + b;
+
+}
+
+
+let result = sum(1, 2);
+
+alert( result );
+                   </pre>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+
 </html>

@@ -1,14 +1,31 @@
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
 header {
     display:flex;
     justify-content: center;
     margin-top: 50px;
-    padding: 0px 30px;
     gap: 9px;
 
 }
 
+main {
+    display: flex;
+    gap: 35px;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 60%;
+}
+
 .info-about-me {
-    background-color: #ffc300;
+    background-color: #ffba08;
     width: 800px;
     height: 200px;
     padding-left: 50px;
@@ -18,12 +35,14 @@ header {
 .name {
     margin-top: 40px;
     margin-bottom: 0px;
+    font-size: 29px;
     font-family: Arial, Helvetica, sans-serif;
 } 
 
 .surname {
     margin-top: 5px;
     margin-bottom: 20px;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -42,4 +61,50 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 2%;
+}
+
+.title {
+    color: #e36414;
+    border-bottom: 3px solid #e36414;
+    font-size: 35px;
+}
+
+.loc-img {
+    width: 15px;
+}
+
+.phone-img {
+    width: 15px;
+}
+
+.email-img {
+    width: 15px;
+}
+
+.summary {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+.skills {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px;
+
+}
+
+.language {
+    border-bottom: 2px solid gray;
+    width: fit-content;
+}
+
+.contacts {
+    list-style: none;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
 }
