@@ -126,12 +126,15 @@ img {
     font-weight: bold;
     color: #ff5400;
     display: flex;
+    flex-direction: column;
 }
 
 .school {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     margin-top: 7px;
+    color: black;
+    font-weight: normal;
 }
 
 .languages {
@@ -174,3 +177,4 @@ img {
     display: flex;
     gap: 15px;
 }
+
