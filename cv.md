@@ -12,21 +12,17 @@
  + **Git**
 ## Code Example
 ```
-function sum(a, b) {
+const mergeArrays = (arr1, arr2) => {
+  arr1.push(...arr2);
+  arr1.sort(function(a, b) {return a - b});
+  return arr1.filter((value, index) => arr1.indexOf(value) === index);
+}
 
- return a + b;
-
- }
-
-
-let result = sum(1, 2);
-
-alert( result );
 ```
 ## Education
 * **Courses** :
   - Code Basics
-  - JS/FE Pre-School 2023Q2 *(in process)*
+  - JS/FE Pre-School 2023Q2
 ## Languages
 + **English** : A2 *(courses by Green Forest)*
    
