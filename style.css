@@ -1,72 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
     max-width: 1050px;
     margin: 0 auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-header {
-    display:flex;
-    justify-content: center;
-    margin-top: 50px;
-    gap: 9px;
-
 }
 
-main {
+.header-container {
     display: flex;
-    gap: 35px;
-}
-
-.left {
-    width: 40%;
+    gap: 0.5rem;
+    margin: 1.5rem;
 }
 
 .right {
-    width: 60%;
+    grid-area: right-column;
+    padding: 1.2rem 0;
+    display: grid;
+    row-gap: 1rem;
 }
+
+.left {
+    grid-area: left-column;
+    padding: 1.2rem 0;
+    display: grid;
+    row-gap: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 'left-column right-column right-column';
+    gap: 4rem;
+    overflow: hidden;
+    padding: 1rem;
+
+}
+
+.div-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+
 
 .info-about-me {
     background-color: #ff5400;
-    width: 800px;
-    height: 200px;
-    padding-left: 50px;
-    border-radius: 1%;
-}
-
-.name {
-    margin-top: 40px;
-    margin-bottom: 0px;
-    font-size: 29px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-} 
-
-.surname {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 50rem;
+    padding-left: 3.1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.3rem;
     color: white;
 }
 
-.prof {
-  margin-top: 0px;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-
-.avatar {
-    width: 200px;
-    height: 200px;
-}
-
-.img-main {
-    width: 100%;
-    height: 100%;
-    border-radius: 2%;
+.img-header {
+    width: 20%;
+    border-radius: 1rem;
     object-fit: cover;
 }
 
@@ -76,36 +75,43 @@ main {
     font-size: 35px;
 }
 
+.contacts-li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .loc-img {
-    width: 15px;
+    width: 1.3rem;
 }
 
 .phone-img {
-    width: 15px;
+    width: 1.3rem;
 }
 
 .email-img {
-    width: 15px;
+    width: 1.3rem;
 }
 
 .summary {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
+    font-size: 1.2rem;
+}
+
+.code-example {
+    background-color: rgba(220, 218, 218, 0.4);
+    border-radius: 1rem;
 }
 
 .skills {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 21px;
-    padding: 0px;
-
+    gap: 1rem;
 }
 
 .stack {
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #dcdada;
     width: fit-content;
 }
 
@@ -117,12 +123,13 @@ main {
 .contacts {
     list-style: none;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .courses {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #ad2e24;
     border-bottom: 2px solid #ad2e24;
@@ -130,7 +137,6 @@ main {
 }
 
 .name-cours {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     font-weight: bold;
     color: #ff5400;
@@ -139,7 +145,6 @@ main {
 }
 
 .school {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     margin-top: 7px;
     color: black;
@@ -148,13 +153,11 @@ main {
 
 .languages {
     color: #ad2e24;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
 
 .lang-container {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     list-style: none;
     padding: 0px;
@@ -168,18 +171,17 @@ main {
     width: fit-content;
 }
 
-.circle-full {
-    background-color: #ff5400;
+
+
+.circle{
+    background-color: #dcdada;
     border-radius: 50%;
     width: 25px;
     height: 25px;
 }
 
-.circle-empty {
-    background-color: #dcdada;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
+.full {
+    background-color: #ff5400;
 }
 
 .location-circle {
@@ -201,9 +203,9 @@ main {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 10px;
+    padding: 1.5rem;
     background-color: #ff5400;
-    border-radius: 2px;
+    border-radius: 1rem;
 
 }
 
@@ -211,7 +213,6 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -220,4 +221,37 @@ main {
 .footer-links-left a {
     text-decoration: none;
     color: white;
+}
+
+
+/* loader */
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ad2e24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 50px;
+    transition: all 1s ease;
+}
+
+.loader-text {
+    animation: opacity 1s ease infinite;
+    filter: blur(0);
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 1;
+    }
 }

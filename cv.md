@@ -24,5 +24,5 @@ const mergeArrays = (arr1, arr2) => {
   - Code Basics
   - JS/FE Pre-School 2023Q2
 ## Languages
-+ **English** : A2 *(courses by Green Forest)*
++ **English** : A2
    
