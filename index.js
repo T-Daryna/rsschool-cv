@@ -5,16 +5,21 @@ setTimeout(() => {
     container.style.display = 'flex'
 }, 3000)
 
-const oranges = document.querySelectorAll('.orange')
-setTimeout(() => {
-    oranges.forEach((orange, index) => {
-       setTimeout(() => {
-            orange.classList.add('full')
-       }, index * 150)
-    })
+const oranges = document.querySelectorAll('.orange');
 
-}, 3000)
+// Додаємо обробник подій для кожного елемента .location-circle
+oranges.forEach(orange  => {
+    window.addEventListener('scroll', (event) => {
 
-window.addEventListener('scroll', function() {
-    console.log("Roma kakashka")
-})
+    // TODO: check if scroll on block with circles
+    //
+      oranges.forEach((orange, index) => {
+        setTimeout(() => {
+          orange.classList.add('full');
+        }, index * 150);
+      });
+    //
+
+  });
+});
+

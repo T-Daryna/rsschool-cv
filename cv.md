@@ -25,4 +25,3 @@ const mergeArrays = (arr1, arr2) => {
   - JS/FE Pre-School 2023Q2
 ## Languages
 + **English** : A2
-   
