@@ -106,13 +106,13 @@
                     <h2 class="title">Code Example</h2>
                     <pre class="code-example">
 
-                        const mergeArrays = (arr1, arr2) => {
+                        const mergeArrays = (arr1, arr2) =&gt; {
 
                             arr1.push(...arr2);
 
                             arr1.sort(function(a, b) {return a - b});
 
-                         return arr1.filter((value, index) => arr1.indexOf(value) === index);
+                         return arr1.filter((value, index) =&gt; arr1.indexOf(value) === index);
 
                         }
                    </pre>
